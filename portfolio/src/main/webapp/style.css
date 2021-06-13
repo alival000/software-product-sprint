@@ -19,6 +19,14 @@ body {
     background-color: #2e2e2e;
 }
 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .grid-container {
     background-color: #787878;
     display: grid;
