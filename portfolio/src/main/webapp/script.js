@@ -15,14 +15,11 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+/** Fetches the current date from the server and adds it to the page. */
+async function showMessage() {
+  const responseFromServer = await fetch('/hello');
+  const textFromResponse = await responseFromServer.text();
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const messageContainer = document.getElementById('message-container');
+  messageContainer.innerText = textFromResponse;
 }
