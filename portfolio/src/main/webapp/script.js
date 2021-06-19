@@ -16,10 +16,12 @@
  * Adds a random greeting to the page.
  */
 /** Fetches the current date from the server and adds it to the page. */
+
 async function showMessage() {
   const responseFromServer = await fetch('/hello');
-  const textFromResponse = await responseFromServer.text();
+  const textFromResponse = await responseFromServer.json();
 
   const messageContainer = document.getElementById('message-container');
-  messageContainer.innerText = textFromResponse;
+  var randomNum = Math.floor(Math.random() * 4);
+  messageContainer.innerText = textFromResponse[randomNum];
 }
