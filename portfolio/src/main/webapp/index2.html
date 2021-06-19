@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <h1 id="text">Alexandra Valdes</h1>
+
+      <div class="grid-container">
+
+        <div class="grid-child">
+            <img src="/images/Headshot Icon.png" width = 425>
+        </div>
+
+        <div class="grid-child">
+            <p><br><br><br><br><b>Welcome to my Portfolio</b><br>
+                My name is Alexandra Valdes and I am a student at New York Univerity Tandon School of Engineering, Majoring in Computer Science<br>
+            </p>
+            <a href="https://www.facebook.com/ali.valdes.5203/">
+                <img alt="Facebook" src="/images/fb.png"
+                width="60" height="60">
+            </a>
+            <a href="https://www.linkedin.com/in/alexandra-valdes-36b90626/">
+                <img alt="LinkedIn" src="/images/li.png"
+                width="57" height="57">
+            </a>
+            
+            
+            <p>Click this button to see an inspirational message.</p>
+            <button onclick="showMessage();">
+                Get Message
+            </button>
+            <p id="message-container"></p>
+           
+            <form action="/form-handler" method="POST">
+                <p>Enter your email here:</p>
+                <textarea name="text-input"></textarea>
+                <br/>
+                <input type="submit" />
+                Submitted!
+            </form>
+
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
