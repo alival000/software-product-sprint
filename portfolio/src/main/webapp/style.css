@@ -1,9 +1,28 @@
 #content {
-  margin-left: auto;
+  margin-left: 30px;
   margin-right: auto;
   width: 650px;
+  font-family: Arial;
+  color: white;
+  font-size: small;
 }
 
 #greeting-container {
   margin-top: 20px;
 }
+
+#text {
+    margin-left: 50px;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+.grid-container {
+    background-color: #787878;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    width: 1175px;
+} 
